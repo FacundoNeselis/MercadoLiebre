@@ -1,119 +1,96 @@
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    box-sizing: border-box;
+    font-family: "Roboto"
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
+header {
+    padding: 20px;
 }
 
-h3{
-    font-size: 24px;
+#busqueda {
+    width: 200px;
+    
 }
 
-p{
-    font-size: 12px;
-}
-div.top-header{
-    padding: 5%;
-}
+#top-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
 
-header{
+body {
     background-color: #EAC926;
 }
 
-header div.logo{
-    width: 50%;
+#cuotas {
+    font-weight: 400;
+    
 }
 
-header div.logo{
-    padding: 10px;
-}
-header nav{
-    font-size: 12px;
-}
-
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-header div.top-header p{
-    width: 100%;
+#boton-lineas {
+    background-color: #03264C;
+    color: #ffffff;
+    display: block;
+    margin: auto;
     text-align: center;
-    margin-top: 10px;
-}
-
-div.burger-menu{
-    text-align: center;
-}
-
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
+    width: 30px;
     font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
+    border-radius: 5px;
 }
 
-article div.main-article{
-    width: 100%;
+header img {
+    width: 130px;
 }
 
-.price{
-    font-size: 18px;
+#banner {
+    display: none;
 }
 
-.discount,
-.description{
-    font-size: 16px;
-    font-weight: normal;
+main {
+    display: none;
 }
 
-h3,
-.description{
-    color: #666;
+nav {
+    display: none;
 }
 
-section.banner img{
-    width: 100%;
+nav a{
+    text-decoration: none;
+    color: black
 }
 
-main{
-    width: 90%;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-main section article{
-    background-color: #fff;
-}
 
-main section article img{
-    width: 100%;
-}
+@media (min-width: 750px) {
 
-main section article i,
-.discount{
-    color: #39b54a;
+    
+    #cuotas {
+        width: 200px;
+        text-align: right;
+    }
+
+    #busqueda {
+        width: 200px;
+    }
+
+    #boton-lineas {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        margin: 5px;
+    }
 }
