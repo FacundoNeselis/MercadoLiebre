@@ -1,96 +1,205 @@
-* {
+*{
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
-    font-family: "Roboto"
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
 }
 
 header {
-    padding: 20px;
-}
-
-#busqueda {
-    width: 200px;
-    
-}
-
-#top-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} 
-
-body {
     background-color: #EAC926;
 }
 
-#cuotas {
-    font-weight: 400;
-    
+.top-header{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-#boton-lineas {
-    background-color: #03264C;
-    color: #ffffff;
-    display: block;
-    margin: auto;
+.logo {
+    width: 50%;
+    align-items: center;
+    padding: 10px;
+    max-width: 400px;
+}
+
+.form {
+    display: flex;
+    align-items: top;
+    width: 50%;
+    height: 24px;
+}
+
+header .form .input{
+    font-size: 13px;
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+header .form .submit{
+    background-color: #FFF;
+    border: 1px solid #000;
+    color: #666;
+}
+
+header ul li {
+    list-style-type: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #666;
+}
+
+.menu-nav {
+    display:none;
+}
+
+.burger-menu {
     text-align: center;
-    width: 30px;
-    font-size: 20px;
-    border-radius: 5px;
 }
 
-header img {
-    width: 130px;
+h3 {
+    font-size: 28px;
 }
 
-#banner {
-    display: none;
+p {
+    font-size: 12px;
 }
 
 main {
-    display: none;
-}
-
-nav {
-    display: none;
-}
-
-nav a{
-    text-decoration: none;
-    color: black
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
+    width: 90%;
 }
 
 
-@media (min-width: 750px) {
 
-    
-    #cuotas {
-        width: 200px;
-        text-align: right;
+.precio {
+    font-size: 18px;
+}
+
+.descuento {
+    font-size: 16px;
+    color: #39b54a;
+}
+
+.descripcion {
+    font-size: 16px;
+}
+
+.burger-menu i {
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+article {
+    padding-bottom: 10px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos article {
+    width: 90%;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section article{
+    background-color: #fff;    
+    margin: 10px 0px;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: flex;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left:87%;
+    top: -30px;
+}
+   
+
+main section h3{
+    margin: 20px 0px;
+}
+
+
+
+@media (min-width: 361px) {
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 
-    #busqueda {
-        width: 200px;
-    }
-
-    #boton-lineas {
+    .burger-menu {
         display: none;
     }
 
-    nav {
+    .menu-nav {
         display: flex;
         justify-content: space-between;
-    }
+        padding: 10px;
+       }
 
-    nav ul {
+    .menu-nav ul {
         display: flex;
+        justify-content: space-around;
+        width: 25%;
+        font-size: 17px;
     }
 
-    nav li {
-        margin: 5px;
+    .productos{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }    
+
+    .productos article {
+        width: 44%;
     }
+}
+
+@media (min-width: 769px) {
+    .productos article {
+        width: 22%;
+    }
+    
 }
