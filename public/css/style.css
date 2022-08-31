@@ -91,6 +91,7 @@ main {
 }
 
 .descuento {
+    display: flex;
     font-size: 16px;
     color: #39b54a;
 }
@@ -135,7 +136,8 @@ main{
 
 main section article{
     background-color: #fff;    
-    margin: 10px 0px;
+    margin: 10px;
+    padding: 12px;
 }
 
 main section article img{
