@@ -10,31 +10,44 @@ body{
 }
 
 header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     background-color: #EAC926;
 }
 
-.top-header{
+#top-header{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    width: 100%;
 }
 
 .logo {
-    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 40%;
     justify-content: space-around;
-    align-items: center;
     padding: 10px;
-    max-width: 400px;
+}
+
+.logo img {
+    width: 100%;
+    max-width: 300px;
 }
 
 .cuotas {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
 }
 
 .form {
     display: flex;
-    width: 70%;
+    width: 40%;
     height: 24px;
 }
 
@@ -56,12 +69,21 @@ header .form .submit{
 }
 
 header ul li {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     list-style-type: none;
+    width: 100%;
 }
 
 header ul li a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
     text-decoration: none;
     color: #666;
+    width: 100%;
 }
 
 .menu-nav {
@@ -69,7 +91,22 @@ header ul li a {
 }
 
 .burger-menu {
-    text-align: center;
+    display: flex;
+} 
+
+
+.burger-menu i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
 }
 
 h3 {
@@ -100,16 +137,7 @@ main {
     font-size: 16px;
 }
 
-.burger-menu i {
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-}
+
 
 section.banner img{
     width: 100%;
@@ -216,14 +244,15 @@ footer {
 
     .menu-nav {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         padding: 10px;
+        width: 100%;
        }
 
     .menu-nav ul {
         display: flex;
         justify-content: space-around;
-        width: 25%;
+        width: 100%;
         font-size: 17px;
     }
 
